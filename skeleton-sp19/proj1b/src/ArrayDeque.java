@@ -1,4 +1,4 @@
-public class ArrayDeque<T> {
+public class ArrayDeque<T> implements Deque<T> {
     public int size;
     public T[] items;
     public static int INIT_CAPACITY;
@@ -7,24 +7,25 @@ public class ArrayDeque<T> {
     public int nextFirst;
     public int nextLast;
     public ArrayDeque(){
-        T[] items = (T[]) new Object(INIT_CAPACITY);
+        items = (T[]) new Object[INIT_CAPACITY];
         size = 0;
         nextFirst = 4;
         nextLast = 5;
     }
     public ArrayDeque( ArrayDeque other){
-        T[] items = (T[]) Object(other.size);
+        items = (T[]) new Object[other.size];
         nextFirst = other.nextFirst;
         nextLast = other.nextLast;
         size = other.size;
         int p = other.nextFirst;
         for(int i=0; i<other.size;i++){
-            items[plusone(p)]=other.items[plusone(p)];
+            int temp = plusone(p);
+            items[temp]= (T) other.items[temp];
             p=plusone(p);
         }
     }
     public void resize(int CAPACITY){
-        T[] a = (T[]) new Object(CAPACITY);
+        T[] a = (T[]) new Object[CAPACITY];
         int p = plusone(nextFirst);
         for (int i =0;i<items.length;i++){
             a[i] = items[p];
@@ -40,6 +41,8 @@ public class ArrayDeque<T> {
     public int minusone(int nextLast){
         return (nextLast - 1 +items.length) % items.length;
     }
+
+    @Override
     public void addFirst(T x){
         if(size == items.length){
             resize(size*FACTOR);
@@ -48,6 +51,8 @@ public class ArrayDeque<T> {
         size +=1;
         nextFirst = minusone(nextFirst);
     }
+
+    @Override
     public void addLast(T x){
         if(size == items.length){
             resize(size*FACTOR);
@@ -56,9 +61,13 @@ public class ArrayDeque<T> {
         size +=1;
         nextLast = plusone(nextLast);
     }
+
+    @Override
     public boolean isEmpty(){
         return size == 0;
     }
+
+    @Override
     public void printDeque(){
         int p =nextFirst;
         while (p!=minusone(nextLast)){
@@ -67,6 +76,8 @@ public class ArrayDeque<T> {
         }
         System.out.println();
     }
+
+    @Override
     public T get(int i){
         if (i>size){
             return null;
@@ -75,14 +86,19 @@ public class ArrayDeque<T> {
             return items[i];
         }
     }
+
     public T getLast(){
         int last = minusone(nextLast);
         return items[last];
     }
+
+    @Override
     public int size(){
 
         return size;
     }
+
+    @Override
     public T removeFirst(){
         if (isEmpty()){
             return null;
@@ -94,6 +110,8 @@ public class ArrayDeque<T> {
             return first;
         }
     }
+
+    @Override
     public T removeLast(){
         T last = items[minusone(nextLast)];
         items[minusone(nextLast)]=null;

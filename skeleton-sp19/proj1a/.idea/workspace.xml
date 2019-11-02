@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="120b2b3b-c01f-4ed9-bf83-090281931496" name="Default Changelist" comment="" />
+    <list default="true" id="120b2b3b-c01f-4ed9-bf83-090281931496" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../proj1b/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/proj1b.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/ArrayDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/Deque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/LinkedListDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/OffByOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/src/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/CharacterComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/src/CharacterComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/PalindromeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/src/PalindromeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/src/TestOffByOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/src/TestPalindrome.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,15 +34,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1SMK1rnFtAOQKd3tckzP8SgEvpr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../library-sp19/javalib/jh61b.jar!/" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proj1b" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -106,6 +129,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="fill all methods" />
     <MESSAGE value="--fill all methods&#10;--passed all the tests!" />
     <MESSAGE value="--fill all methods&#10;--passed all the tests!&#10;--finished all" />
