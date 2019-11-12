@@ -7,13 +7,13 @@ public class ArrayDeque<T> {
     public int nextFirst;
     public int nextLast;
     public ArrayDeque(){
-        T[] items = (T[]) new Object(INIT_CAPACITY);
+        T[] items = (T[]) new Object[INIT_CAPACITY];
         size = 0;
         nextFirst = 4;
         nextLast = 5;
     }
     public ArrayDeque( ArrayDeque other){
-        T[] items = (T[]) Object(other.size);
+        T[] items = (T[]) Object[other.size];
         nextFirst = other.nextFirst;
         nextLast = other.nextLast;
         size = other.size;
