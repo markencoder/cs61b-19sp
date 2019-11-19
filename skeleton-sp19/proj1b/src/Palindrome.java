@@ -1,8 +1,8 @@
-import org.jetbrains.annotations.NotNull;
-
+/**import org.jetbrains.annotations.NotNull;
+*/
 public class Palindrome {
     public Deque<Character> wordToDeque(String word){
-        LinkedListDeque<Character> deque = new LinkedListDeque<>();
+        Deque<Character> deque = new LinkedListDeque<>();
         for (int i =0;i < word.length();i++){
             deque.addLast(word.charAt(i));
         }
@@ -19,7 +19,7 @@ public class Palindrome {
         }
         return true;
         }
-    public boolean isPalindrome(@NotNull String word, CharacterComparator cc){
+    public boolean isPalindrome(String word, CharacterComparator cc){
         for(int i =0; i<word.length()/2;i++){
             if(!(cc.equalChars(word.charAt(i), word.charAt(word.length()-i-1)))){
                 return false;
